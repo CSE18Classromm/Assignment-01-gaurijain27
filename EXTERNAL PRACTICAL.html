@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>external practical</title>
+</head>
+<style>
+     .navbar{
+	padding:0px;
+`	width:100%;
+      }
+     .nav1 ul{
+	list-style: none;
+	display:grid;
+	grid-template-columns:repeat(5,1fr);
+	background: lightblue;
+	place-items :center;
+      }
+     .nav1 ul li{
+	padding-top:10px;
+	padding-bottom:10px;
+	width:fit-content;
+      }
+     .nav1 ul a{
+	text-decoration:none;
+	color:black;
+      }
+     .grid1{
+	display:grid;
+	grid-template-columns:repeat(2,1fr);
+	background:gray;
+	padding:10px;
+	gap:10px;	
+	border-radius:20px;
+      }
+      .grid1 .item{
+	background:white;
+	width:100%;
+	text-align:center;
+	height:200px;
+	place-content:center;
+	border-radius:20px;
+	color:green;
+	font-size:larger;
+	font-weight:bold;
+      }
+      @media (max-width: 768px) {
+            .nav1 ul{
+	display:grid;
+	grid-template-columns:repeat(1,1fr);
+            }
+            .grid1{
+	display:grid;
+	grid-template-columns:repeat(1,1fr);
+            }
+        }	
+</style>
+<body>
+<div class="navbar">
+     <div class="nav1">
+          <ul>
+	<li><a href="#">HOME</a></li>
+	<li><a href="#">SERVICES</a></li>
+	<li><a href="#">ABOUT</a></li>
+	<li><a href="#">CONTACTS</a></li>
+	<li><a href="#">KNOW MORE</a></li>
+          </ul>
+     </div>
+</div>
+
+<div class="grid1">
+     <div class="item">item 1</div>
+     <div class="item">item 2</div>
+     
+</div>
+</body>
+</html>
